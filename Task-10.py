@@ -1,7 +1,8 @@
 # Python-beginners-tasks
-file = input("filename:")
-index = 0
-for x in range(len(file)):
-    if file[x]== '.':
-            index= x
-print(file[index+1:])
+class rectangle():
+    def __init__(self ,l ,w):
+        self.length = l
+        self.width = w
+    def rectangle_area(self):
+        return self.length*self.width
+print(rectangle(10,5).rectangle_area())
